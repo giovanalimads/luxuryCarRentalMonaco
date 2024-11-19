@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formsAvaliation.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="avaliacao-form">
+        <h2>Deixe seu feedback</h2>
+        <form action="/submit-feedback" method="post" enctype="multipart/form-data">
+          <!-- Foto de perfil -->
+          <label for="profile-pic">Foto de Perfil:</label>
+          <input type="file" id="profile-pic" name="profile-pic" accept="image/*" required>
+      
+          <!-- Nome -->
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" placeholder="Seu nome" required>
+      
+<!-- Primeiro menu -->
+<label for="brand">Escolha a marca:</label>
+<select id="brand" onchange="populateModels()">
+  <option value="">Selecione uma marca</option>
+  <option value="ferrari">Ferrari</option>
+  <option value="lamborghini">Lamborghini</option>
+  <option value="porsche">Porsche</option>
+</select>
+
+<!-- Segundo menu que será preenchido dinamicamente -->
+<label for="model">Escolha o modelo:</label>
+<select id="model">
+  <option value="">Selecione um modelo</option>
+</select>       
+      
+          <!-- Comentário -->
+          <label for="comment">Comentário:</label>
+          <textarea id="comment" name="comment" rows="4" placeholder="Escreva seu feedback aqui..." required></textarea>
+      
+          <!-- Avaliação em estrelas -->
+          <label for="rating">Avaliação:</label>
+          <div class="rating">
+            <input type="radio" id="star5" name="rating" value="5"><label for="star5">&#9733;</label>
+            <input type="radio" id="star4" name="rating" value="4"><label for="star4">&#9733;</label>
+            <input type="radio" id="star3" name="rating" value="3"><label for="star3">&#9733;</label>
+            <input type="radio" id="star2" name="rating" value="2"><label for="star2">&#9733;</label>
+            <input type="radio" id="star1" name="rating" value="1"><label for="star1">&#9733;</label>
+          </div>
+      
+          <!-- Botão de envio -->
+          <button type="submit">Enviar Feedback</button>
+        </form>
+      </section>
+      
+      <script>
+        // Dados dos modelos
+        const carModels = {
+          ferrari: ["Ferrari 488", "Ferrari Portofino"],
+          lamborghini: ["Lamborghini Huracán", "Lamborghini Aventador"],
+          porsche: ["Porsche 911", "Porsche Cayenne"]
+        };
+      
+        function populateModels() {
+          const brandSelect = document.getElementById("brand");
+          const modelSelect = document.getElementById("model");
+          const selectedBrand = brandSelect.value;
+      
+          // Limpa as opções atuais
+          modelSelect.innerHTML = '<option value="">Selecione um modelo</option>';
+      
+          // Adiciona os modelos correspondentes à marca selecionada
+          if (selectedBrand && carModels[selectedBrand]) {
+            carModels[selectedBrand].forEach(model => {
+              const option = document.createElement("option");
+              option.value = model.toLowerCase().replace(" ", "-");
+              option.textContent = model;
+              modelSelect.appendChild(option);
+            });
+          }
+        }
+      </script>
+</body>
+</html>
