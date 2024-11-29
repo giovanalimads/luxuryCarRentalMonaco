@@ -58,7 +58,10 @@ body {
 }
 
 header {
-    height: 100vh;
+    height: 129vh;
+    background-image: url(../images/imageHeader.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 /*NAVBAR */
@@ -83,7 +86,7 @@ header {
 .logo > img {
     width: 90px;
     margin-left: 25px;
-    margin-right: 80px;
+    margin-right: 75px;
     margin-top: 7px;
     cursor: pointer;
 }
@@ -139,7 +142,7 @@ header {
     display: flex;
     flex-direction: row;
     gap: 5px;
-    margin-left: 80px;
+    margin-left: 75px;
     margin-right: 25px;
 }
 .nav-menu > .search-bar > form > input {
@@ -149,9 +152,136 @@ header {
     margin-top: 4px;
     background-color: var(--search-bar);
     border: none;
+    border: var(--logo);
 }
 
 .nav-menu > .search-bar > form > .user-profile > svg {
     margin-top: 5px;
     cursor: pointer;
+}
+
+.nav-menu > .search-bar > form > .user-profile > svg:hover{
+    color: var(--logo);
+}
+
+/* HEADER */
+/* > Títulos */
+.title-header {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.title-header h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--background-white);
+}
+
+.title-header p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--background-white);
+}
+
+.tags {
+    display: flex;
+    gap: 5px;
+}
+.tags > p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: var(--titles);
+    background-color: var(--background-white);
+    border-radius: 5px;
+    width: 80px;
+    padding: 5px 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tags > p:hover{
+    background-color: var(--dark-blue);
+    color: var(--background-white);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: ; /*fazer o zoom out aqui*/
+}
+
+.booking {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-top: 315px;
+}
+
+.booking > .container-booking {
+    padding: 15px;
+    background: var(--background-white);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+    margin-top: 5px;
+    gap: 20px;
+    display: flex;
+}
+
+.booking > .container-booking > .info {
+    margin-top: 6px;
+    gap: 20px;
+}
+
+/* Inicialmente esconde o conteúdo não ativo */
+.info {
+    display: none;
+}
+
+/* Mostra apenas o conteúdo ativo */
+.info.active {
+    display: flex;
+}
+
+/* Destaque para a tag ativa */
+.tag.active {
+    background-color: var(--dark-blue);
+    color: var(--background-white);
+}
+
+.vl {
+    border-left: 1px solid var(--light-gray);
+    height: 45px;
+
+}
+
+.booking > .container-booking > .info p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: var(--pick-up-date);
+}
+
+.pickup-input input,
+.dropoff-input input,
+.date-input input,
+.time-input input {
+    border: none; 
+    height: 20px;
+}
+
+.number-input {
+    width: 30px;
+}
+
+.btn-book-now > button {
+    color: var(--background-white);
+    background-color: var(--logo);
+    padding: 20px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-book-now > button:hover {
+    background-color: #001356;
 }
