@@ -189,7 +189,10 @@ header {
 .tags {
     display: flex;
     gap: 5px;
+    align-self: flex-start;
+    /*margin-left: 70px;*/
 }
+
 .tags > p {
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
@@ -206,7 +209,6 @@ header {
     background-color: var(--dark-blue);
     color: var(--background-white);
     transition: background-color 0.3s ease, color 0.3s ease;
-    transition: ; /*fazer o zoom out aqui*/
 }
 
 .booking {
