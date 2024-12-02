@@ -54,12 +54,12 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-    background: var(--background);
+    background: var(--bg-poor);
 }
 
 header {
-    height: 129vh;
-    background-image: url(../images/imageHeader.jpg);
+    height: 128.5vh;
+    background-image: url(../images/imageHeader.svg);
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -222,7 +222,7 @@ header {
     background: var(--background-white);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 1000px;
+    max-width: 1500px;
     margin-top: 5px;
     gap: 20px;
     display: flex;
@@ -252,7 +252,6 @@ header {
 .vl {
     border-left: 1px solid var(--light-gray);
     height: 45px;
-
 }
 
 .booking > .container-booking > .info p {
@@ -285,4 +284,71 @@ header {
 
 .btn-book-now > button:hover {
     background-color: #001356;
+}
+
+/* CAR CATEGORY SECTION */
+#car-category {
+    height: 75vh;
+    background-color: var(--background);
+}
+
+.title h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 30px;
+
+}
+
+.container-top {
+    padding: 45px 54px 16px 54px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-list {
+    display: flex;
+    gap: 12px;
+}
+
+.card-item {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+
+.card-item .car{
+    width: 170px;
+ }
+
+ .slider-wrapper {
+    overflow: hidden;
+    margin: 0 50px 20px;
+}
+
+.inside-card-item {
+    position: absolute;
+    top: 0%;
+}
+
+.inside-card-item h3 {
+    margin: 10px 0 0 6px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 20px;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* alterar a sombra*/
+}
+
+.white-text {
+    color: var(--background-white);
+}
+
+.inside-card-item img {
+    margin-top: 145px;
+    margin-left: 125px;
+    cursor: pointer;
+    width: 35px;
+}
+
+.inside-card-item img:hover {
+    content: url(../images/arrow-up-right-hover.svg);
 }
