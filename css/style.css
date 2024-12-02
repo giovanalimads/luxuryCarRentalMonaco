@@ -410,6 +410,7 @@ header {
     text-align: center;
 }
 
+/* FEEDBACK SECTION */
 #feedback {
     background-color: var(--background);
     height: 120vh;
@@ -547,5 +548,51 @@ header {
 
 .getFeedback:hover {
     background-color: var(--excellent);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* BEST OFFER SECTION */
+#best-offer {
+    background-color: var(--titles);
+    height: 40vh;
+}
+
+.container-offer {
+    padding: 30px 54px 30px 54px;
+}
+
+.container-right h2 {
+    color: var(--background-white);
+    font-family: 'Syne', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.container-right p {
+    font-family: 'Poppins', sans-serif;
+    line-height: 20px;
+    color: var(--background-white);
+    padding: 10px 0 10px 0;
+}
+
+.container-right span {
+    color: var(--day);
+    font-size: 12px;
+}
+
+.container-right button {
+    background-color: var(--logo);
+    color: var(--background-white);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container-right button:hover {
+    background-color: var(--dark-blue);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
