@@ -295,7 +295,6 @@ header {
 .title h2 {
     font-family: 'Syne', sans-serif;
     font-size: 30px;
-
 }
 
 .container-top {
@@ -351,4 +350,62 @@ header {
 
 .inside-card-item img:hover {
     content: url(../images/arrow-up-right-hover.svg);
+}
+
+/* HIGLIGHTS SECTION */
+#higlights {
+    background-color: var(--titles);
+    height: 26vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-higlights {
+    padding-top: 20px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.higlightsNumbers {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 15px;
+}
+
+.vl-blue {
+    border-left: 3px solid var(--highligts);
+    height: 55px;
+    border-radius: 10px;
+}
+
+.higlights-item {
+    color: var(--background-white);
+    text-align: center;
+    line-height: 30px;
+}
+
+.higlights-item h3 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.higlights-item span {
+    color: var(--highligts);
+}
+
+.higlights-item p {
+    font-size: 14px;
+}
+
+.higlights-text {
+    color: var(--background-white);
+    font-size: 22px;
+    font-weight: 600;
+    width: 250px;
+    line-height: 30px;
+    text-align: center;
 }
