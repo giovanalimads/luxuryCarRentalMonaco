@@ -409,3 +409,143 @@ header {
     line-height: 30px;
     text-align: center;
 }
+
+#feedback {
+    background-color: var(--background);
+    height: 120vh;
+}
+
+.title h2 {
+    font-family: 'Syne', sans-serif;
+    font-size: 30px;
+}
+
+.container-feedback {
+    padding: 45px 54px 16px 54px;
+}
+
+.container-all {
+    columns: 2;
+}
+
+.container-feedback-item {
+    width: 510px;
+    background-color: var(--background-white);
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+}
+
+.container-feedback-item {
+    padding: 10px;
+    margin-bottom: 10px;
+    /* falta colocar a sombra */
+}
+
+.container-feedback-item .top {
+    display: flex;
+}
+
+.background-user-profile {
+    background-color: var(--dark-blue);
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+}
+
+.top > .name-avaliation {
+    display: flex;
+    margin-left: 5px;
+    margin-top: 5px;
+    gap: 221px;
+}
+
+.user-name {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.avaliation-excellent {
+    color: var(--dark-blue);
+    font-size: 12px;
+    font-weight: 600;
+    background-color: var(--bg-excellent);
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.text-avaliation p {
+    margin-top: 10px;
+    font-size: 12px;
+    width: 450px;
+}
+
+.choose-rental-car {
+    display: flex;
+    margin-top: 10px;
+}
+
+.choose-rental-car h6 {
+    font-size: 12px;
+    font-weight: 600;
+}
+.marca-modelo {
+    display: flex;
+    gap: 5px;
+    margin-left: 5px;
+}
+
+.choose-rental-car .carMarca, .carModelo {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.car-avaliation {
+    display: flex;
+}
+
+.car-avaliation h6 {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.star {
+    margin-left: 5px;
+    margin-top: -4px;
+}
+
+.container-button {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.container-button button {
+    padding: 10px 10px;
+    border-radius: 0 10px 0 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.moreFeedbacks {
+    background-color: transparent;
+    color: var(--logo);
+    border: 2px solid var(--logo);
+}
+
+.moreFeedbacks:hover {
+    background-color: var(--background-white);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.getFeedback {
+    background-color: var(--logo);
+    color: var(--background-white);
+    border: none;
+}
+
+.getFeedback:hover {
+    background-color: var(--excellent);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
