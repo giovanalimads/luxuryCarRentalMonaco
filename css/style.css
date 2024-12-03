@@ -607,3 +607,127 @@ header {
 }
 
 /* FAQ SECTION */
+/*#faq {
+    background-color: var(--background);
+    height: 80vh;
+}
+
+.faq-section {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .faq-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .faq-item {
+    background: #d9d9d9;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .faq-question {
+    padding: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .faq-question:hover {
+    background: #ccc;
+  }
+
+  .faq-answer {
+    padding: 15px;
+    font-size: 0.9rem;
+    background: #f9f9f9;
+    display: none;
+  }
+
+  .faq-answer.open {
+    display: block;
+  }
+
+  .faq-question .icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .faq-question .icon.rotate {
+    transform: rotate(45deg);
+  }
+
+  .faq-footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .faq-footer a {
+    color: #0056b3;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .faq-footer a:hover {
+    text-decoration: underline;
+  }
+
+  /*.container-faq {
+    padding: 45px 54px 16px 54px;
+}
+
+.container-questions {
+    columns: 2;
+}
+
+.question-item {
+    padding: 15px 10px 15px 10px;
+    background-color: var(--faq);
+    width: 500px;
+    height: 50px;
+    display: flex;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+.question-item p {
+    color: var(--titles);
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.button-question {
+    color: var(--logo);
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: -2px;
+    cursor: pointer;
+}
+
+.make-contact {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    display: flex;
+    gap: 3px;
+    justify-content: center;
+}
+
+.make-contact p {}
+
+.make-contact a {
+    color: var(--logo);
+    cursor: pointer;
+}
