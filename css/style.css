@@ -419,6 +419,7 @@ header {
 .title h2 {
     font-family: 'Syne', sans-serif;
     font-size: 30px;
+    margin-bottom: 16px;
 }
 
 .container-feedback {
@@ -559,6 +560,9 @@ header {
 
 .container-offer {
     padding: 30px 54px 30px 54px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
 }
 
 .container-right h2 {
@@ -596,3 +600,10 @@ header {
     background-color: var(--dark-blue);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+.container-left img {
+    width: 400px;
+    margin-top: -10px;
+}
+
+/* FAQ SECTION */
