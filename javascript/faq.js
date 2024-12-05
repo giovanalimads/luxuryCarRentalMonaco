@@ -1,21 +1,25 @@
-const faqItems = document.querySelectorAll('.faq-item');
+var acc = document.getElementsByClassName("accordion");
 
-    faqItems.forEach(item => {
-      const question = item.querySelector('.faq-question');
-      const answer = item.querySelector('.faq-answer');
-      const icon = question.querySelector('.icon');
-
-      question.addEventListener('click', () => {
-        // Fecha outros itens ao abrir um novo
-        faqItems.forEach(i => {
-          if (i !== item) {
-            i.querySelector('.faq-answer').classList.remove('open');
-            i.querySelector('.icon').classList.remove('rotate');
-          }
-        });
-
-        // Alterna o estado do item clicado
-        answer.classList.toggle('open');
-        icon.classList.toggle('rotate');
-      });
+for (var i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        var allPanels = document.getElementsByClassName("pannel");
+        var allButtons = document.getElementsByClassName("accordion");
+        for (var j = 0; j < allPanels.length; j++) {
+            if (allPanels[j] !== this.nextElementSibling) {
+                allPanels[j].style.display = "none";
+                allButtons[j].classList.remove("active");
+                allButtons[j].parentElement.classList.remove("active");
+            }
+        }
+        var pannel = this.nextElementSibling;
+        if (pannel.style.display === "block") {
+            pannel.style.display = "none";
+            this.classList.remove("active");
+            this.parentElement.classList.remove("active");
+        } else {
+            pannel.style.display = "block";
+            this.classList.add("active");
+            this.parentElement.classList.add("active");
+        }
     });
+}
