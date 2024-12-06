@@ -54,7 +54,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-    background: var(--bg-poor);
+    background: var(--background);
 }
 
 header {
