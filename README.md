@@ -29,4 +29,7 @@ The website design was completely designed by me after finishing the Origamid UI
  </p>
 
 Main Page:
-![MAIN PAGE](https://github.com/user-attachments/assets/530eb8ce-849c-40c2-99fc-fdb2f0cfb209)
+![MAIN PAGE](https://github.com/user-attachments/assets/d2fedea7-4ba0-4426-ada2-106ddb532df3)
+
+Contact Us Page:
+![CONTACT US PAGE](https://github.com/user-attachments/assets/a2a9988b-1dfa-4127-bd7a-52fcdddd6010)
