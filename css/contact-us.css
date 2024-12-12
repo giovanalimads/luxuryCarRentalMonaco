@@ -164,6 +164,10 @@ header {
     color: var(--logo);
 }
 
+#header {
+    margin-bottom: -120px;
+}
+
 /* FORMS */
 .title-page h1 {
     color: var(--background-white);
@@ -246,12 +250,15 @@ header {
 }
 
 .contact-text p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Syne', sans-serif;
+    color: var(--background-white);
+    font-weight: 600;
 }
 
 .contact-text span {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
+    color: var(--background-white);
 }
 
 .social-container h5 {
@@ -284,28 +291,127 @@ label {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 500;
+    color: var(--titles);
 }
 
 input {
-    margin-top: 3px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    background-color: var(--form);
+    border: none;
 }
 
 .input-text,
 .input-email {
-    height: 25px;
+    height: 30 px;
     width: 100%;
 }
 
+textarea {
+    background-color: var(--form);
+    border: none;
+}
+
 button {
-    padding: 10px;
+    padding: 10px 20px;
     color: var(--background-white);
     background-color: var(--destaque);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
     border: none;
+    border-radius: 5px;
     transition: background-color 0.2s ease-in-out;
     cursor: pointer;
 }
 
 button:hover {
     background-color: var(--excellent);
+}
+
+/* LOCATION */
+#location {
+    padding: 0px 54px 16px 54px;
+}
+
+.title {
+    font-family: 'Syne', sans-serif;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+iframe {
+    margin-bottom: 20px;
+}
+
+/* FOOTER SECTION */
+#footer {
+    background-color: var(--titles);
+    height: 34vh;
+}
+
+.container-top-footer {
+    padding: 30px 54px 30px 54px;
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+}
+
+.container-left-footer h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: var(--background-white);
+    text-transform: uppercase;
+}
+
+.info-left {
+    columns: 2;
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+.container-left-footer p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: var(--pick-up-date);
+}
+
+.social-footer a {
+    color: var(--pick-up-date);
+}
+
+.social-footer i {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.container-right-footer h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: var(--background-white);
+    text-transform: uppercase;
+}
+
+.container-right-footer a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: var(--pick-up-date);
+    cursor: pointer;
+}
+
+.info-right {
+    columns: 3;
+    margin-top: 10px;
+    line-height: 20px;
+}
+
+.conainer-botton-footer {
+    background-color: black;
+    height: 7vh;
+}
+
+.conainer-botton-footer p {
+    padding: 10px 0 10px 54px;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: var(--pick-up-date);
+    text-align: center;
 }
