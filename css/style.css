@@ -294,7 +294,7 @@ header {
 
 /* CAR CATEGORY SECTION */
 #car-category {
-    height: 75vh;
+    height: 70vh;
     background-color: var(--background);
 }
 
@@ -304,9 +304,8 @@ header {
 }
 
 .container-top {
-    padding: 45px 54px 16px 54px;
+    padding: 40px 54px 16px 54px;
     display: flex;
-    justify-content: space-between;
 }
 
 .card-list {
@@ -354,7 +353,12 @@ header {
     width: 35px;
 }
 
+.inside-card-item img {
+    transition: transform 0.3s ease-in-out;
+}
+
 .inside-card-item img:hover {
+    transform: rotate(90deg);
     content: url(../images/arrow-up-right-hover.svg);
 }
 
@@ -496,6 +500,7 @@ header {
     font-size: 12px;
     font-weight: 600;
 }
+
 .marca-modelo {
     display: flex;
     gap: 5px;
@@ -650,10 +655,13 @@ header {
 }
 
 .pannel {
-    padding: 15px 32px 15px 32px;
+    padding: 15px 30px 55px 30px;
     background-color: var(--faq);
     overflow: hidden;
     display: none;
+    
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
 }
 
 .pannel p {
