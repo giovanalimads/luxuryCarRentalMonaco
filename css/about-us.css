@@ -1,5 +1,5 @@
 header {
-    height: 60vh;
+    height: 50vh;
     background-color: var(--titles);
     position: relative;
 }
@@ -104,11 +104,39 @@ header {
     color: var(--logo);
 }
 
-.title-page {
-    margin-bottom: -120px;
 
+
+.title-page h1 {
+    color: var(--background-white);
+    font-family: 'Syne', sans-serif;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    top: -200px;
 }
 
+.title-page > .link-back {
+    color: var(--background-white);
+    font-family: 'Syne', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: /*30px*/;
+    text-align: center;
+}
+
+.title-page > .link-back a {
+    color: var(--logo);
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -190px;
+}
 
 
 
