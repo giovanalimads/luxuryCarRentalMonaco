@@ -1,5 +1,5 @@
 header {
-    height: 50vh;
+    height: 45vh;
     background-color: var(--titles);
     position: relative;
 }
@@ -104,12 +104,11 @@ header {
     color: var(--logo);
 }
 
-
-
 .title-page h1 {
     color: var(--background-white);
     font-family: 'Syne', sans-serif;
     font-size: 30px;
+    margin-top: 45px;
     margin-bottom: 10px;
     text-align: center;
     top: -200px;
@@ -137,6 +136,14 @@ header {
     position: relative;
     top: -190px;
 }
+
+.title-section{}
+
+
+
+
+
+
 
 
 
