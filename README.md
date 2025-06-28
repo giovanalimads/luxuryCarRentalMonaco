@@ -17,7 +17,7 @@ The website features a responsive design, ensuring a great experience on desktop
 The website design was completely designed by me after finishing the Origamid UI course for beginners, in oreder ot put all the knowledge acquired during the course.  This includes:
 - **Prototyping:** Planning the layout and functionality of the site.
 - **Typography:** Choosing fonts that enhance readability and visual appeal.
-- Harmony and Contrast:** Balancing elements to create a visually pleasing interface.
+- **Harmony and Contrast:** Balancing elements to create a visually pleasing interface.
 - **Visual Hierarchy:** Organizing information to guide the user's attention effectively.
 - **Spacing and Alignment:** Ensuring consistency and clarity throughout the design.
   
